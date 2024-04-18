@@ -1,0 +1,10 @@
+package main
+import "fmt"
+
+func main() {
+    var n, custo int
+  fmt.Println("digite o número de horas em que utilizou a charrete")
+  fmt.Scan(&n)
+  custo = (((n / 3) * 10) + n%3 * 5)  
+  fmt.Print("O VALOR A PAGAR É ", custo)
+}
