@@ -6,13 +6,12 @@ import (
 )
 
 func main() {
-	invertido := []string
+	var invertido []string
 	for {
 		input, _ := bufio.NewReader(os.Stdin).ReadString()
 		if input == "#" {
 			break
 		}
-		
 
 	}
 }
