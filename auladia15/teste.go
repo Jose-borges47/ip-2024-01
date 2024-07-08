@@ -39,9 +39,13 @@ import "fmt"
 
 func main() {
 	array := []int{1, 2, 3, 4, 5, 6}
+	fmt.Println(trocadelado(array))
 
 }
-
-func trocadelado() {
-
+func trocadelado(x []int, a, b int) {
+  if a >= b {
+    return 0 
+  }
+  x[a], x[b] = x[b], x[a]
+  trocadelado(x, a+1, b-1)
 }
